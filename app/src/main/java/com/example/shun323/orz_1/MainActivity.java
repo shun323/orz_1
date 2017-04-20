@@ -12,7 +12,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setMain();
+        setMain2();
     }
+
+    private void setMain2() {
+        setContentView(R.layout.activity_main);
+
+        //START!ボタン
+        Button btn_rule = (Button) findViewById(R.id.button);
+        btn_rule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setSub2();
+            }
+        });
+    }
+
 
     private void setMain() {
         setContentView(R.layout.activity_main);
@@ -22,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btn_rule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setSub();
+                setSub2();
             }
         });
     }
@@ -37,8 +52,12 @@ public class MainActivity extends AppCompatActivity {
                 setMain();
             }
         });
+
+        //戻るボタン
+        Button btn_back = (Button) findViewById(R.id.button3);
     }
 
+    private void setSub2(){
+        setContentView (R.layout.game);
+    }
 }
-
-
