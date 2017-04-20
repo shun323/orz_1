@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         btn_rule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.layout);
+                setContentView(R.layout.rule);
             }
         });
     }
