@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button3"
+            tools:layout_editor_absoluteX="268dp"
+            tools:layout_editor_absoluteY="433dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="戻る" />
+
+        <TextView
+            android:id="@+id/textView2"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="62dp"
+            tools:textSize="18sp"
+            android:layout_width="337dp"
+            android:layout_height="23dp"
+            android:text="①両者、座標を指定する" />
+
+        <TextView
+            android:id="@+id/textView3"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="114dp"
+            android:layout_width="332dp"
+            android:layout_height="29dp"
+            android:text="②両者の指定した座標を開示"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="85dp"
+            tools:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="※次のターンその座標は指定できない" />
+
+        <TextView
+            android:id="@+id/textView5"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="152dp"
+            tools:textSize="18sp"
+            android:layout_width="346dp"
+            android:layout_height="49dp"
+            android:text="③指定した座標のポイントが大きいほうに得点が入る" />
+
+        <TextView
+            android:id="@+id/textView6"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="365dp"
+            tools:textSize="18sp"
+            android:layout_width="337dp"
+            android:layout_height="31dp"
+            android:text="④最終的に得点の多いほうの勝ち" />
+
+        <TextView
+            android:id="@+id/textView7"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="201dp"
+            tools:textSize="18sp"
+            android:layout_width="349dp"
+            android:layout_height="41dp"
+            android:text="両者が同じポイントだった場合、両者への得点はなし" />
+
+        <TextView
+            android:id="@+id/textView8"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="242dp"
+            tools:textSize="18sp"
+            android:layout_width="348dp"
+            android:layout_height="44dp"
+            android:text="ただし両者が1を指定した場合、両者に1点ずつ入る" />
+
+        <TextView
+            android:id="@+id/textView9"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:textSize="18sp"
+            android:layout_width="357dp"
+            android:layout_height="26dp"
+            android:text="このゲームは2人用です" />
+
+        <TextView
+            android:id="@+id/textView11"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="286dp"
+            tools:textSize="18sp"
+            android:layout_width="343dp"
+            android:layout_height="52dp"
+            android:text="またプレイヤー1が4、プレイヤー2が1を指定した場合、プレイヤー2に1点入る" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
