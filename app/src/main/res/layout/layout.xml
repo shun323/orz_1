@@ -151,7 +151,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="またプレイヤー1が4、プレイヤー2が1を指定した場合、プレイヤー2に1点入る"
+        android:text="またプレイヤー1が5、プレイヤー2が1を指定した場合、プレイヤー2に1点入る"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
