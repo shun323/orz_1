@@ -67,9 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         //ターン終了ボタン
         Button btn_start = (Button) findViewById(R.id.button39);
-        }
-
-
+    }
     private void setSub3(){
         setContentView (R.layout.game_mode2);
         Button btn_game2 = (Button) findViewById(R.id.button39);
@@ -86,3 +84,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+
+
+
