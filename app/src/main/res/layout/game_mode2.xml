@@ -10,13 +10,14 @@
         android:layout_height="match_parent" >
 
         <TextView
-    android:id="@+id/textView"
-    android:layout_width="180dp"
-    android:layout_height="20dp"
-    android:layout_span="5"
-    android:textColor="#FF69B4"
-    android:text="プレイヤー１のターン" />
-</TableRow>
+            android:id="@+id/textView"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_span="5"
+            android:textColor="#40E0D0"
+            android:text="プレイヤー２のターン" />
+    </TableRow>
+
 
     <TableRow
         android:layout_width="match_parent"
