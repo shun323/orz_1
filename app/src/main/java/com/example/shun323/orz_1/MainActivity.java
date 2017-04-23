@@ -56,6 +56,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setSub2(){
-        setContentView (R.layout.game);
+        setContentView (R.layout.game_mode);
     }
 }
