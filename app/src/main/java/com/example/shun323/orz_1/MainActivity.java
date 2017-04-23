@@ -55,11 +55,10 @@ public class MainActivity extends AppCompatActivity {
         Button btn_back = (Button) findViewById(R.id.button3);
     }
 
-    private void setSub2() {
-        setContentView(R.layout.game_mode);
-        //ターン終了ボタン
-        Button btn_start = (Button) findViewById(R.id.button39);
-        btn_start.setOnClickListener(new View.OnClickListener() {
+    private void setSub2(){
+        setContentView (R.layout.game_mode);
+        Button btn_game1 = (Button) findViewById(R.id.button39);
+        btn_game1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setSub3();
@@ -67,10 +66,23 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //ターン終了ボタン
-        Button btn_back = (Button) findViewById(R.id.button39);
-    }
+        Button btn_start = (Button) findViewById(R.id.button39);
+        }
+
 
     private void setSub3(){
         setContentView (R.layout.game_mode2);
+        Button btn_game2 = (Button) findViewById(R.id.button39);
+        btn_game2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setSub2();
+
+            }
+        });
+        //ターン終了ボタン
+        Button btn_start = (Button) findViewById(R.id.button39);
+
+
     }
 }
