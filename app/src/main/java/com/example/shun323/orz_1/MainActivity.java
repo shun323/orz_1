@@ -1,6 +1,8 @@
 package com.example.shun323.orz_1;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -34,11 +36,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    private void setMain2() {
-        setContentView(R.layout.activity_main);
-
-
-    }
 
     private void setSub() {
         setContentView(R.layout.layout);
@@ -52,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //戻るボタン
-        Button btn_back = (Button) findViewById(R.id.button3);
     }
 
     private void setSub2(){
@@ -61,12 +57,21 @@ public class MainActivity extends AppCompatActivity {
         btn_game1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setSub3();
+                new AlertDialog.Builder(MainActivity.this)
+                        .setTitle("title")
+                        .setMessage("message")
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                setSub3();
+                            }
+                        })
+                        .setNegativeButton("Cancel", null)
+                        .show();
             }
         });
 
         //ターン終了ボタン
-        Button btn_start = (Button) findViewById(R.id.button39);
     }
     private void setSub3(){
         setContentView (R.layout.game_mode2);
@@ -74,12 +79,21 @@ public class MainActivity extends AppCompatActivity {
         btn_game2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setSub2();
+                new AlertDialog.Builder(MainActivity.this)
+                        .setTitle("title")
+                        .setMessage("message")
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                setSub2();
+                            }
+                        })
+                        .setNegativeButton("Cancel", null)
+                        .show();
 
             }
         });
         //ターン終了ボタン
-        Button btn_start = (Button) findViewById(R.id.button39);
 
 
     }
